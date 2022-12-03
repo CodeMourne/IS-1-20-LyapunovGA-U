@@ -21,7 +21,7 @@ namespace UchebnayaPraktika
 
         }
         
-        public class conn
+        public class con
         {
             public string host = "chuc.caseum.ru";
             public string port = "33333";
@@ -30,9 +30,25 @@ namespace UchebnayaPraktika
             public string password = "uchebka";
         }
 
+        MySqlConnection conn;
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                con connection = new con();
+                conn = new MySqlConnection($"server={connection.host};port={connection.port};user={connection.user};database={connection.based};password={connection.password};");
+                conn.Open();
+                MessageBox.Show("Подключение к базе прошло успешно");
+            }
+            catch
+            {
+                MessageBox.Show("Подключение не удалось");
+            }
+            finally 
+            {
+                conn.Close();
+            }
         }
     }
 }

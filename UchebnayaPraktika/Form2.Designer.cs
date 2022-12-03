@@ -264,6 +264,7 @@ namespace UchebnayaPraktika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(715, 253);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox6);
