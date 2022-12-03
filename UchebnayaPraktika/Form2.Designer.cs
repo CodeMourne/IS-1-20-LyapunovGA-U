@@ -52,9 +52,6 @@ namespace UchebnayaPraktika
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -115,7 +112,7 @@ namespace UchebnayaPraktika
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(12, 177);
+            this.listBox1.Location = new System.Drawing.Point(12, 148);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(698, 94);
             this.listBox1.TabIndex = 7;
@@ -204,7 +201,7 @@ namespace UchebnayaPraktika
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(610, 90);
+            this.textBox6.Location = new System.Drawing.Point(610, 34);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 23);
             this.textBox6.TabIndex = 22;
@@ -221,7 +218,7 @@ namespace UchebnayaPraktika
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(610, 61);
+            this.textBox7.Location = new System.Drawing.Point(610, 63);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 23);
             this.textBox7.TabIndex = 20;
@@ -238,7 +235,7 @@ namespace UchebnayaPraktika
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(610, 32);
+            this.textBox8.Location = new System.Drawing.Point(610, 90);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 23);
             this.textBox8.TabIndex = 18;
@@ -251,6 +248,7 @@ namespace UchebnayaPraktika
             this.button3.TabIndex = 17;
             this.button3.Text = "Ввод данных";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label11
             // 
@@ -262,43 +260,11 @@ namespace UchebnayaPraktika
             this.label11.TabIndex = 16;
             this.label11.Text = "Видеокарта";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(12, 148);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(196, 23);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Вывод в listbox";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(214, 148);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(245, 23);
-            this.button5.TabIndex = 25;
-            this.button5.Text = "Вывод в listbox";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(465, 148);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(245, 23);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Вывод в listbox";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // FormWork1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 275);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(715, 253);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label9);
@@ -355,8 +321,5 @@ namespace UchebnayaPraktika
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
     }
 }

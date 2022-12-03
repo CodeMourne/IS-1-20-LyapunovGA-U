@@ -89,5 +89,37 @@ namespace UchebnayaPraktika
                 MessageBox.Show($"Указанные переменные в textbox неверны и не принимаются программой");
             }
         }
+        class VideoCard : HD
+        {
+            public string gpu;
+            public string creator;
+            public string ram;
+            public VideoCard(string cost, string year, string rpm, string inter, string gig, string gpu, string creator, string ram ) : base(cost, year, rpm, inter, gig)
+            {
+                this.gpu = gpu;
+                this.creator = creator;
+                this.ram = ram;
+            }
+            public void Display()
+            {
+                MessageBox.Show($"Цена: {cost}, год выпуска: {year}, производитель: {creator}, память: {ram}");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                VideoCard video = new VideoCard(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text);
+                listBox1.Items.Clear();
+                listBox1.Items.Add($"Цена комплектующей части: {video.cost}руб. Год выпуска: {video.year}");
+                listBox1.Items.Add($"Частота GPU:{video.gpu}. Производитель: {video.creator}. Объём памяти: {video.ram}");
+                video.Display();
+            }
+            catch
+            {
+                MessageBox.Show($"Указанные переменные в textbox неверны и не принимаются программой");
+            }
+        }
     }
 }
