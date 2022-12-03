@@ -289,7 +289,7 @@ namespace UchebnayaPraktika
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FormWork1";
-            this.Text = "Form2";
+            this.Text = "Первое задание";
             this.Load += new System.EventHandler(this.FormWork1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

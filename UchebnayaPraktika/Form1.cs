@@ -13,10 +13,10 @@ namespace UchebnayaPraktika
     public partial class FormMenu : Form
     {
         FormWork1 Work1 = new FormWork1();
+        FormWork2 Work2 = new FormWork2();
         public FormMenu()
         {
             InitializeComponent();
-            button2.Enabled = false;
             button3.Enabled = false;
             button4.Enabled = false;
         }
@@ -24,6 +24,11 @@ namespace UchebnayaPraktika
         private void button1_Click(object sender, EventArgs e)
         {
             Work1.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Work2.ShowDialog();
         }
     }
 }

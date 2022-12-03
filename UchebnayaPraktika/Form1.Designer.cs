@@ -63,7 +63,9 @@ namespace UchebnayaPraktika
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(201, 23);
             this.button2.TabIndex = 2;
+            this.button2.Text = "Второе задание";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -102,7 +104,7 @@ namespace UchebnayaPraktika
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FormMenu";
-            this.Text = "Form1";
+            this.Text = "Меню";
             this.ResumeLayout(false);
             this.PerformLayout();
 
