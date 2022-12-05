@@ -76,6 +76,7 @@ namespace UchebnayaPraktika
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Location = new System.Drawing.Point(108, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 23);
@@ -103,6 +104,7 @@ namespace UchebnayaPraktika
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox2.Location = new System.Drawing.Point(108, 61);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 23);
@@ -130,6 +132,7 @@ namespace UchebnayaPraktika
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox3.Location = new System.Drawing.Point(359, 34);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 23);
@@ -147,6 +150,7 @@ namespace UchebnayaPraktika
             // 
             // textBox4
             // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox4.Location = new System.Drawing.Point(359, 63);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 23);
@@ -184,6 +188,7 @@ namespace UchebnayaPraktika
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox5.Location = new System.Drawing.Point(359, 90);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 23);
@@ -201,6 +206,7 @@ namespace UchebnayaPraktika
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox6.Location = new System.Drawing.Point(610, 34);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 23);
@@ -218,6 +224,7 @@ namespace UchebnayaPraktika
             // 
             // textBox7
             // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox7.Location = new System.Drawing.Point(610, 63);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 23);
@@ -235,6 +242,7 @@ namespace UchebnayaPraktika
             // 
             // textBox8
             // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox8.Location = new System.Drawing.Point(610, 90);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 23);

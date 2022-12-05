@@ -9,8 +9,10 @@ using MySql.Data.MySqlClient;
 
 namespace UchebnayaPraktika
 {
+
     public partial class FormWork2 : Form
     {
+        MySqlConnection conn;
         public FormWork2()
         {
             InitializeComponent();
@@ -23,23 +25,26 @@ namespace UchebnayaPraktika
         
         public class con
         {
-            public string host = "chuc.caseum.ru";
-            public string port = "33333";
-            public string user = "uchebka";
-            public string based = "uchebka";
-            public string password = "uchebka";
+            static public string host = "chuc.caseum.ru";
+            static public string port = "33333";
+            static public string user = "uchebka";
+            static public string based = "uchebka";
+            static public string password = "uchebka";
+            MySqlConnection conn;
+            static public MySqlConnection Connection()
+            {
+                string con = $"server={host};port={port};user={user};database={based};password={password};";
+                MySqlConnection conn = new MySqlConnection(con);
+                return conn;
+            }
         }
-
-        MySqlConnection conn;
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                con connection = new con();
-                conn = new MySqlConnection($"server={connection.host};port={connection.port};user={connection.user};database={connection.based};password={connection.password};");
-                conn.Open();
-                MessageBox.Show("Подключение к базе прошло успешно");
+                conn = con.Connection();
+                MessageBox.Show("Всё работает");
             }
             catch
             {
