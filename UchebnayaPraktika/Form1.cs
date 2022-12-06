@@ -14,10 +14,10 @@ namespace UchebnayaPraktika
     {
         FormWork1 Work1 = new FormWork1();
         FormWork2 Work2 = new FormWork2();
+        FormWork3 Work3 = new FormWork3();
         public FormMenu()
         {
             InitializeComponent();
-            button3.Enabled = false;
             button4.Enabled = false;
         }
 
@@ -29,6 +29,16 @@ namespace UchebnayaPraktika
         private void button2_Click(object sender, EventArgs e)
         {
             Work2.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Work3.ShowDialog();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

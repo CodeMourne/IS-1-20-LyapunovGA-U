@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -15,7 +16,7 @@ namespace UchebnayaPraktika
         MySqlConnection conn;
         public FormWork2()
         {
-            InitializeComponent();
+            
         }
 
         private void FormWork2_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace UchebnayaPraktika
             static public string user = "uchebka";
             static public string based = "uchebka";
             static public string password = "uchebka";
-            MySqlConnection conn;
+            
             static public MySqlConnection Connection()
             {
                 string con = $"server={host};port={port};user={user};database={based};password={password};";
@@ -44,6 +45,7 @@ namespace UchebnayaPraktika
             try
             {
                 conn = con.Connection();
+                conn.Open();
                 MessageBox.Show("Всё работает");
             }
             catch
