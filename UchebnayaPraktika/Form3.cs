@@ -16,12 +16,12 @@ namespace UchebnayaPraktika
         MySqlConnection conn;
         public FormWork2()
         {
-            
+            InitializeComponent();
         }
 
         private void FormWork2_Load(object sender, EventArgs e)
         {
-
+            
         }
         
         public class con
